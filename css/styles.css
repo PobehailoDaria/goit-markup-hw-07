@@ -57,7 +57,7 @@ h6 {
   color: var(--secondary-color);
 }
 
-.section-title {
+.section__title {
   margin-bottom: 50px;
   text-align: center;
   font-size: 36px;
@@ -90,7 +90,7 @@ h6 {
   padding-bottom: 94px;
 }
 
-.no-top-padding {
+.section--no-top-padding {
   padding-top: 0;
 }
 /* header*/
@@ -106,34 +106,32 @@ h6 {
   font-weight: 700;
   font-size: 26px;
   line-height: var(--secondary-line-height);
-}
-.header-logo {
-  color: var(--black-color);
+  color: var(--brand-color);
 }
 
-.logo .accent {
-  color: var(--brand-color);
+.logo--header {
+  color: var(--black-color);
 }
 
 /* nav */
 
-.main-nav {
+.page-header__container {
   display: flex;
   align-items: center;
 }
 
-.nav-flex {
+.nav {
   display: flex;
   align-items: center;
 }
 
-.nav-list {
+.nav__list {
   display: flex;
   gap: 50px;
   margin-left: 93px;
 }
 
-.nav-item {
+.nav__item {
   position: relative;
   display: block;
   padding-top: 32px;
@@ -144,11 +142,11 @@ h6 {
   color: var(--secondary-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.current {
+.nav__item--current {
   color: var(--brand-color);
 }
 
-.current::after {
+.nav__item--current::after {
   content: '';
   position: absolute;
   display: block;
@@ -159,19 +157,19 @@ h6 {
   border-radius: 2px;
   background-color: var(--brand-color);
 }
-.nav-item:hover,
-.nav-item:focus {
+.nav__item:hover,
+.nav__item:focus {
   color: var(--brand-color);
 }
 /*auth */
 
-.auth-list {
+.auth {
   display: flex;
   gap: 50px;
   margin-left: auto;
 }
 
-.auth-link {
+.auth__link {
   display: flex;
   gap: 10px;
   align-items: center;
@@ -185,16 +183,17 @@ h6 {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.auth-link:hover,
-.auth-link:focus {
+.auth__link:hover,
+.auth__link:focus {
   color: var(--brand-color);
 }
-.auth-icon {
+
+.auth__icon {
   fill: var(--primary-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.auth-link:hover .auth-icon,
-.auth-link:focus .auth-icon {
+.auth__link:hover .auth__icon,
+.auth__link:focus .auth__icon {
   fill: var(--brand-color);
 }
 
@@ -219,7 +218,7 @@ h6 {
   text-align: center;
 }
 
-.hero-title {
+.hero-section__title {
   margin-top: 0;
   margin-bottom: 30px;
   font-weight: 900;
@@ -230,7 +229,7 @@ h6 {
   color: var(--white-color);
 }
 
-.hero-button {
+.hero-section__button {
   display: inline-block;
   border-radius: 4px;
   min-width: 216px;
@@ -248,23 +247,23 @@ h6 {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.hero-section__button:hover,
+.hero-section__button:focus {
   background-color: var(--hero-button-accent);
 }
 
 /* advantages */
 
-.advantages-list {
+.advantages__list {
   display: flex;
   gap: 30px;
 }
 
-.advantage-item {
+.advantages__item {
   width: calc((100% - 90px) / 4);
 }
 
-.thumb {
+.advantages__thumb {
   display: flex;
   width: 270px;
   height: 120px;
@@ -275,30 +274,30 @@ h6 {
   margin-bottom: 30px;
 }
 
-.advantages-title {
+.advantages__title {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: var(--primary-line-height);
   text-transform: uppercase;
 }
 
-.advantages-text {
+.advantages__text {
   margin: 0;
   line-height: 1.71;
 }
 
 /* activities*/
 
-.activity-list {
+.activities__list {
   display: flex;
   gap: 30px;
 }
 
-.activity-item {
+.activities__item {
   position: relative;
 }
 
-.activity-thumb {
+.activities__thumb {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -310,7 +309,7 @@ h6 {
   background-color: rgb(47, 48, 58, 0.8);
 }
 
-.activity-text {
+.activities__text {
   margin: 0;
 
   font-weight: 700;
@@ -323,15 +322,15 @@ h6 {
 
 /* team */
 
-.team-list {
+.team__list {
   display: flex;
   gap: 30px;
 }
 
-.team-section {
+.team {
   background-color: var(--light-background-color);
 }
-.team-card {
+.team__card {
   width: calc((100% - 90px) / 4);
   text-align: center;
   background-color: var(--white-color);
@@ -341,30 +340,30 @@ h6 {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-information {
+.team__information {
   font-size: var(--secondary-font-size);
   line-height: var(--secondary-line-height);
 }
 
-.team-title {
+.team__title {
   margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
 }
 
-.team-text {
+.team__text {
   margin-top: 0;
   margin-bottom: 16px;
 }
 
-.social-network-list {
+.social-network {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
 
-.social-network-link {
+.social-network__link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -375,31 +374,31 @@ h6 {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-network-icon {
+.social-network__icon {
   fill: #afb1b8;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-network-link:hover,
-.social-network-link:focus {
+.social-network__link:hover,
+.social-network__link:focus {
   background-color: var(--brand-color);
 }
 
-.social-network-link:hover .social-network-icon,
-.social-network-link:focus .social-network-icon {
+.social-network__link:hover .social-network__icon,
+.social-network__link:focus .social-network__icon {
   fill: var(--white-color);
 }
 
 /* clients */
 
-.clients-list {
+.clients {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.client-thumb {
+.clients__thumb {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -412,32 +411,23 @@ h6 {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-icon {
+.clients__icon {
   fill: #afb1b8;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-thumb:hover,
-.client-thumb:focus {
+.clients__thumb:hover,
+.clients__thumb:focus {
   border-color: var(--brand-color);
 }
 
-.client-thumb:hover .client-icon,
-.client-thumb:focus .client-icon {
+.clients__thumb:hover .clients__icon,
+.clients__thumb:focus .clients__icon {
   fill: var(--brand-color);
 }
 
 /*footer*/
-
-.footer-main {
-  display: flex;
-}
-
-.address-section {
-  min-width: 231px;
-  margin-right: 70px;
-}
 
 .page-footer {
   padding-top: 60px;
@@ -445,13 +435,25 @@ h6 {
   background-color: var(--dark-background-color);
 }
 
-.footer-logo {
+.page-footer__container {
+  display: flex;
+}
+
+.address-container {
+  min-width: 231px;
+  margin-right: 70px;
+}
+
+.page-footer__logo {
   display: inline-block;
   margin-bottom: 20px;
+}
+
+.logo--footer {
   color: var(--white-color);
 }
 
-.address-link {
+.address__link {
   display: inline-block;
   font-style: normal;
   line-height: 1.71;
@@ -460,31 +462,31 @@ h6 {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address-item {
+.address__item {
   margin-bottom: 9px;
 }
 
-.address-item:last-child {
+.address__item:last-child {
   margin-bottom: 0;
 }
 
-.contact {
+.address__contact {
   color: var(--transparent-color);
 }
 
-.address-link:hover,
-.address-link:focus {
+.address__link:hover,
+.address__link:focus {
   color: var(--brand-color);
 }
 
 /* social networks */
 
-.social-networks-section {
+.network-container {
   margin-top: 15px;
 }
 
-.social-networks-text,
-.subscribe-text {
+.network-container__text,
+.subscribe__text {
   margin-bottom: 20px;
   font-size: 14px;
   font-weight: 700;
@@ -493,39 +495,33 @@ h6 {
   color: var(--white-color);
 }
 
-.footer-network-link {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  justify-content: center;
-  align-items: center;
+.social-network__link--footer {
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-network-icon {
+.social-network__icon--footer {
   fill: var(--white-color);
 }
 
-.footer-network-link:hover,
-.footer-network-link:focus {
+.social-network__link--footer:hover,
+.social-network__link--footer:focus {
   background-color: var(--brand-color);
 }
 
 /* subscribe */
 
-.subscribe-section {
+.subscribe {
   margin-top: 15px;
   margin-left: 93px;
 }
 
-.subscribe-form {
+.subscribe__form {
   display: flex;
   align-items: center;
 }
 
-.footer-email-input {
+.subscribe__email-input {
   min-width: 358px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -538,7 +534,7 @@ h6 {
   color: var(--transparent-color);
 }
 
-.subscribe-button {
+.subscribe__button {
   display: flex;
   gap: 10px;
   align-items: center;
@@ -561,8 +557,8 @@ h6 {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscribe-button:hover,
-.subscribe-button:focus {
+.subscribe__button:hover,
+.subscribe__button:focus {
   background-color: var(--hero-button-accent);
 }
 
