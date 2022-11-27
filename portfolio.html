@@ -19,35 +19,37 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container main-nav">
-        <nav class="nav-flex">
-          <a class="logo header-logo link" lang="en" href="./index.html"
-            ><span class="accent">Web</span>Studio</a
+      <div class="container page-header__container">
+        <nav class="nav">
+          <a class="logo link" lang="en" href="./index.html"
+            >Web<span class="logo--header">Studio</span></a
           >
-          <ul class="list nav-list">
+          <ul class="list nav__list">
             <li>
-              <a class="nav-item link" href="./index.html">Студія</a>
+              <a class="nav__item link" href="./index.html">Студія</a>
             </li>
             <li>
-              <a class="nav-item link current" href="./portfolio.html"
+              <a
+                class="nav__item link nav__item--current"
+                href="./portfolio.html"
                 >Портфоліо</a
               >
             </li>
-            <li><a class="nav-item link" href="#">Контакти</a></li>
+            <li><a class="nav__item link" href="#">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="list auth-list">
-          <li class="auth-item">
-            <a class="auth-link link" href="mailto:info@devstudio.com">
-              <svg class="auth-icon" width="16" height="12">
+        <ul class="list auth">
+          <li class="auth__item">
+            <a class="auth__link link" href="mailto:info@devstudio.com">
+              <svg class="auth__icon" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="auth-item">
-            <a class="auth-link link" href="tel:+380961111111">
-              <svg class="auth-icon" width="10" height="16">
+          <li class="auth__item">
+            <a class="auth__link link" href="tel:+380961111111">
+              <svg class="auth__icon" width="10" height="16">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -60,39 +62,43 @@
       <section class="section">
         <div class="container">
           <h1 class="visually-hidden">Наші роботи</h1>
-          <ul class="button-list list">
+          <ul class="filter list">
             <li>
-              <button class="button list-button" type="button">Усі</button>
+              <button class="button filter__button" type="button">Усі</button>
             </li>
             <li>
-              <button class="button list-button" type="button">
+              <button class="button filter__button" type="button">
                 Веб-сайти
               </button>
             </li>
             <li>
-              <button class="button list-button" type="button">Додатки</button>
+              <button class="button filter__button" type="button">
+                Додатки
+              </button>
             </li>
             <li>
-              <button class="button list-button" type="button">Дизайн</button>
+              <button class="button filter__button" type="button">
+                Дизайн
+              </button>
             </li>
             <li>
-              <button class="button list-button" type="button">
+              <button class="button filter__button" type="button">
                 Маркетинг
               </button>
             </li>
           </ul>
-          <ul class="list work-list">
-            <li class="work-item">
+          <ul class="list work">
+            <li class="work__item">
               <a class="link" href="">
-                <div class="work-thumb">
+                <div class="work__thumb">
                   <img
                     class="image"
                     src="./images/technocrack-website.jpg"
                     alt="веб-сайт на екрані ноутбука"
                     width="370"
                   />
-                  <div class="image-thumb">
-                    <p class="image-text">
+                  <div class="work__slide">
+                    <p class="work__slide-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -100,23 +106,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="work-border">
-                  <h2 class="work-title title">Технокряк</h2>
-                  <p class="work-text">Веб-сайт</p>
+                <div class="work__border">
+                  <h2 class="work__title title">Технокряк</h2>
+                  <p class="work__text">Веб-сайт</p>
                 </div></a
               >
             </li>
-            <li class="work-item">
+            <li class="work__item">
               <a class="link" href="">
-                <div class="work-thumb">
+                <div class="work__thumb">
                   <img
                     class="image"
                     src="./images/basketball-poster.jpg"
                     alt="два баскетбольних гравця"
                     width="370"
                   />
-                  <div class="image-thumb">
-                    <p class="image-text">
+                  <div class="work__slide">
+                    <p class="work__slide-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -124,25 +130,25 @@
                     </p>
                   </div>
                 </div>
-                <div class="work-border">
-                  <h2 class="work-title title">
+                <div class="work__border">
+                  <h2 class="work__title title">
                     Постер <span lang="en"> New Orlean vs Golden Star</span>
                   </h2>
-                  <p class="work-text">Дизайн</p>
+                  <p class="work__text">Дизайн</p>
                 </div></a
               >
             </li>
-            <li class="work-item">
+            <li class="work__item">
               <a class="link" href="">
-                <div class="work-thumb">
+                <div class="work__thumb">
                   <img
                     class="image"
                     src="./images/seafood-application.jpg"
                     alt="лейбл ресторану"
                     width="370"
                   />
-                  <div class="image-thumb">
-                    <p class="image-text">
+                  <div class="work__slide">
+                    <p class="work__slide-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -150,25 +156,25 @@
                     </p>
                   </div>
                 </div>
-                <div class="work-border">
-                  <h2 class="work-title title">
+                <div class="work__border">
+                  <h2 class="work__title title">
                     Ресторан <span lang="en">Seafood</span>
                   </h2>
-                  <p class="work-text">Додаток</p>
+                  <p class="work__text">Додаток</p>
                 </div></a
               >
             </li>
-            <li class="work-item">
+            <li class="work__item">
               <a class="link" href="">
-                <div class="work-thumb">
+                <div class="work__thumb">
                   <img
                     class="image"
                     src="./images/headphones.jpg"
                     alt="навушники"
                     width="370"
                   />
-                  <div class="image-thumb">
-                    <p class="image-text">
+                  <div class="work__slide">
+                    <p class="work__slide-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -176,25 +182,25 @@
                     </p>
                   </div>
                 </div>
-                <div class="work-border">
-                  <h2 class="work-title title">
+                <div class="work__border">
+                  <h2 class="work__title title">
                     Проєкт <span lang="en">Prime</span>
                   </h2>
-                  <p class="work-text">Маркетинг</p>
+                  <p class="work__text">Маркетинг</p>
                 </div></a
               >
             </li>
-            <li class="work-item">
+            <li class="work__item">
               <a class="link" href="">
-                <div class="work-thumb">
+                <div class="work__thumb">
                   <img
                     class="image"
                     src="./images/boxes.jpg"
                     alt="дві коробки"
                     width="370"
                   />
-                  <div class="image-thumb">
-                    <p class="image-text">
+                  <div class="work__slide">
+                    <p class="work__slide-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -202,25 +208,25 @@
                     </p>
                   </div>
                 </div>
-                <div class="work-border">
-                  <h2 class="work-title title">
+                <div class="work__border">
+                  <h2 class="work__title title">
                     Проєкт <span lang="en">Boxes</span>
                   </h2>
-                  <p class="work-text">Додаток</p>
+                  <p class="work__text">Додаток</p>
                 </div></a
               >
             </li>
-            <li class="work-item">
+            <li class="work__item">
               <a class="link" href="">
-                <div class="work-thumb">
+                <div class="work__thumb">
                   <img
                     class="image"
                     src="./images/inspiration-website.jpg"
                     alt="веб-сайт на моніторі"
                     width="370"
                   />
-                  <div class="image-thumb">
-                    <p class="image-text">
+                  <div class="work__slide">
+                    <p class="work__slide-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -228,25 +234,25 @@
                     </p>
                   </div>
                 </div>
-                <div class="work-border">
-                  <h2 class="work-title title" lang="en">
+                <div class="work__border">
+                  <h2 class="work__title title" lang="en">
                     Inspiration has no Borders
                   </h2>
-                  <p class="work-text">Веб-сайт</p>
+                  <p class="work__text">Веб-сайт</p>
                 </div></a
               >
             </li>
-            <li class="work-item">
+            <li class="work__item">
               <a class="link" href="">
-                <div class="work-thumb">
+                <div class="work__thumb">
                   <img
                     class="image"
                     src="./images/edition.jpg"
                     alt="видання із зображеннями"
                     width="370"
                   />
-                  <div class="image-thumb">
-                    <p class="image-text">
+                  <div class="work__slide">
+                    <p class="work__slide-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -254,25 +260,25 @@
                     </p>
                   </div>
                 </div>
-                <div class="work-border">
-                  <h2 class="work-title title">
+                <div class="work__border">
+                  <h2 class="work__title title">
                     Видання <span lang="en">Limited Edition</span>
                   </h2>
-                  <p class="work-text">Дизайн</p>
+                  <p class="work__text">Дизайн</p>
                 </div></a
               >
             </li>
-            <li class="work-item">
+            <li class="work__item">
               <a class="link" href="">
-                <div class="work-thumb">
+                <div class="work__thumb">
                   <img
                     class="image"
                     src="./images/label-tag.jpg"
                     alt="біла етикетка з написом"
                     width="370"
                   />
-                  <div class="image-thumb">
-                    <p class="image-text">
+                  <div class="work__slide">
+                    <p class="work__slide-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -280,25 +286,25 @@
                     </p>
                   </div>
                 </div>
-                <div class="work-border">
-                  <h2 class="work-title title">
+                <div class="work__border">
+                  <h2 class="work__title title">
                     Проєкт <span lang="en">LAB</span>
                   </h2>
-                  <p class="work-text">Маркетинг</p>
+                  <p class="work__text">Маркетинг</p>
                 </div></a
               >
             </li>
-            <li class="work-item">
+            <li class="work__item">
               <a class="link" href="">
-                <div class="work-thumb">
+                <div class="work__thumb">
                   <img
                     class="image"
                     src="./images/business-application.jpg"
                     alt="додаток на екрані ноутбука"
                     width="370"
                   />
-                  <div class="image-thumb">
-                    <p class="image-text">
+                  <div class="work__slide">
+                    <p class="work__slide-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -306,9 +312,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="work-border">
-                  <h2 class="work-title title" lang="en">Growing Business</h2>
-                  <p class="work-text">Додаток</p>
+                <div class="work__border">
+                  <h2 class="work__title title" lang="en">Growing Business</h2>
+                  <p class="work__text">Додаток</p>
                 </div></a
               >
             </li>
@@ -317,31 +323,33 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="container footer-main">
-        <div class="footer-section address-section">
-          <a class="logo footer-logo link" lang="en" href="./index.html"
-            ><span class="accent">Web</span>Studio</a
+      <div class="container page-footer__container">
+        <div class="address-container">
+          <a class="logo page-footer__logo link" lang="en" href="./index.html"
+            >Web<span class="logo--footer">Studio</span></a
           >
           <address>
-            <ul class="list">
-              <li class="address-item">
+            <ul class="adress__list list">
+              <li class="address__item">
                 <a
-                  class="address-link map link"
+                  class="address__link link"
                   href="https://goo.gl/maps/yozrQYHjD53a8zxV6"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              <li class="address-item">
+              <li class="address__item">
                 <a
-                  class="address-link contact link"
+                  class="address__link address__contact link"
                   href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="address-item">
-                <a class="address-link contact link" href="tel:+380961111111"
+              <li class="address__item">
+                <a
+                  class="address__link address__contact link"
+                  href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -349,33 +357,61 @@
           </address>
         </div>
 
-        <div class="footer-section social-networks-section">
-          <p class="social-networks-text">приєднуйтесь</p>
-          <ul class="list social-network-list">
+        <div class="network-container">
+          <p class="network-container__text">приєднуйтесь</p>
+          <ul class="list social-network">
             <li>
-              <a class="footer-network-link link" href="">
-                <svg class="footer-network-icon" width="20" height="20">
+              <a
+                class="social-network__link social-network__link--footer link"
+                href=""
+              >
+                <svg
+                  class="social-network__icon social-network__icon--footer"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="footer-network-link link" href="">
-                <svg class="footer-network-icon" width="20" height="20">
+              <a
+                class="social-network__link social-network__link--footer link"
+                href=""
+              >
+                <svg
+                  class="social-network__icon social-network__icon--footer"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="footer-network-link link" href="">
-                <svg class="footer-network-icon" width="20" height="20">
+              <a
+                class="social-network__link social-network__link--footer link"
+                href=""
+              >
+                <svg
+                  class="social-network__icon social-network__icon--footer"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="footer-network-link link" href="">
-                <svg class="footer-network-icon" width="20" height="20">
+              <a
+                class="social-network__link social-network__link--footer link"
+                href=""
+              >
+                <svg
+                  class="social-network__icon social-network__icon--footer"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -385,20 +421,20 @@
         <div
           role="group"
           aria-labelledby="subscribe-form-head"
-          class="footer-section subscribe-section"
+          class="subscribe"
         >
-          <p id="subscribe-form-head" class="subscribe-text">
+          <p id="subscribe-form-head" class="subscribe__text">
             Підпишіться на розсилку
           </p>
-          <form class="subscribe-form">
+          <form class="subscribe__form">
             <label
               ><input
                 type="email"
                 name="email"
                 placeholder="E-mail"
-                class="email-input"
+                class="subscribe__email-input"
             /></label>
-            <button class="button subscribe-button" type="submit">
+            <button class="button subscribe__button" type="submit">
               Підписатися
               <svg width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-send"></use>
