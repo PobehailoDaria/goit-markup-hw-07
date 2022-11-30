@@ -75,6 +75,14 @@ h6 {
   padding-top: 0;
 }
 
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #2196f3;
+}
+
 .page-header {
   border-bottom: 1px solid #ececec;
 }
@@ -84,25 +92,8 @@ h6 {
   align-items: center;
 }
 
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: #2196f3;
-}
-
 .logo--header {
   color: #000000;
-}
-
-.page-footer__logo {
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-.logo--footer {
-  color: #ffffff;
 }
 
 .nav {
@@ -398,6 +389,15 @@ h6 {
 
 .page-footer__container {
   display: flex;
+}
+
+.page-footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.logo--footer {
+  color: #ffffff;
 }
 
 .address-container {
